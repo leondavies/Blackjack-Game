@@ -27,3 +27,23 @@ button {
     margin-bottom: 2px;
     margin-top: 2px;
 }
+
+#wrapper {
+    border: 5px solid black;
+    width: 40em;
+    margin: auto auto;
+    padding: 3em;
+}
+
+#inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 10em;
+    margin: 0 auto 2em auto;
+}
+
+#hidden,
+#Dealercard {
+    display: none;
+}

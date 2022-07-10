@@ -6,15 +6,35 @@
 </head>
 
 <body>
+    <div id="wrapper">
+        <h1>Blackjack</h1>
+        <div id="Hidden">
+            <p id="message-el">Want to play a round?</p>
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
 
-    <h1>Blackjack</h1>
-    <p id="message-el">Want to play a round?</p>
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el">Sum:</p>
-    <button onclick="startGame()">START GAME</button>
-    <button onclick="newCard()">NEW CARD</button>
-    <p id="player-el"></p>
-    <script src="index.js"></script>
+            <div id="options">
+                <button onclick="newCard()">NEW CARD</button>
+                <button onclick="stand()">Stand</button>
+            </div>
+
+            <button id="Dealercard" onclick="showdealercard(), dealerhit()">Show dealers next card</button>
+
+
+
+            <p id="Chips">Balance: </p>
+
+            <div id="Dealer">
+                <p id="dcards-el">Dealers Cards: </p>
+                <p id="dsum-el">Dealers Sum: </p>
+
+            </div>
+        </div>
+
+        <button id="start" onclick="playerName(), depositAmount(), hide()">START GAME</button>
+
+        <script src="index.js"></script>
+    </div>
 </body>
 
 </html>
